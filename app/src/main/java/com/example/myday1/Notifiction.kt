@@ -67,8 +67,6 @@ class Notifiction : AppCompatActivity() {
             }
             notificationManager.notify(notifiction_id , notifiction)
         }
-
-
     }
 
     fun createNotificationChannel(){
@@ -80,8 +78,6 @@ class Notifiction : AppCompatActivity() {
             }
             val manager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             manager.createNotificationChannel(channel)
-
-
         }
 
     }

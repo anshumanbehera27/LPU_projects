@@ -19,6 +19,7 @@ class Date : AppCompatActivity() {
         val datePicker = findViewById<DatePicker>(R.id.date_picker)
 
         val today = Calendar.getInstance()
+
         datePicker.init(
             today.get(Calendar.YEAR) ,today.get(Calendar.MONTH) ,
             today.get(Calendar.DAY_OF_MONTH)
