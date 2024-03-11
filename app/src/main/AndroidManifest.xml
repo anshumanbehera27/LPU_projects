@@ -21,24 +21,23 @@
         android:theme="@style/splashScreeThem"
         tools:targetApi="31">
         <activity
+            android:name=".Project.Carbook"
+            android:exported="false" />
+        <activity
             android:name=".Project.VideoView"
-            android:exported="false" >
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".MainCoustom"
             android:exported="false" />
         <activity
             android:name=".Project.shedultTime"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".jobSheduler"
             android:exported="false" />
         <activity
             android:name=".TimePicker"
-            android:exported="false" />
+            android:exported="false"></activity>
         <activity
             android:name=".Date"
             android:exported="false" />
@@ -56,19 +55,19 @@
             android:exported="false" />
         <activity
             android:name=".Notifiction"
-            android:exported="true" >
+            android:exported="false" />
+
+        <receiver android:name=".AlarmManagerBroadcast" />
+
+        <activity
+            android:name=".Alarm_Manager"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <receiver android:name=".AlarmManagerBroadcast" />
-
-        <activity
-            android:name=".Alarm_Manager"
-            android:exported="false" />
 
         <service
             android:name=".MyJobService"

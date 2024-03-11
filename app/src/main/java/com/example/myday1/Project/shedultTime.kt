@@ -26,13 +26,10 @@ class shedultTime : AppCompatActivity() {
 
         alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
         timePicker = findViewById(R.id.time_picker)
-
         findViewById<Button>(R.id.jobshedult).setOnClickListener {
             scheduleAlarm()
         }
     }
-
-
     private fun scheduleAlarm() {
         val calendar = Calendar.getInstance()
         calendar.set(Calendar.HOUR_OF_DAY, timePicker.hour)

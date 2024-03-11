@@ -15,9 +15,7 @@ class Date : AppCompatActivity() {
         setTheme(R.style.Theme_Myday1)
         setContentView(R.layout.activity_date)
 
-
         val datePicker = findViewById<DatePicker>(R.id.date_picker)
-
         val today = Calendar.getInstance()
 
         datePicker.init(

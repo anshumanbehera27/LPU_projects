@@ -22,8 +22,6 @@ class Alarm_Manager : AppCompatActivity() {
         var alarmManager: AlarmManager
         val intent = Intent(this, AlarmManagerBroadcast::class.java)
         val pendingIntent = PendingIntent.getBroadcast(this, 234, intent, 0)
-
-
         start.setOnClickListener {
             var i = Etext.text.toString().toInt()
             alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
