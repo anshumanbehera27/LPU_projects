@@ -11,13 +11,13 @@
       <entry key="VideoActivity">
         <State />
       </entry>
-      <entry key="VideoView">
-        <State />
-      </entry>
       <entry key="app">
         <State />
       </entry>
       <entry key="jobSheduler">
+        <State />
+      </entry>
+      <entry key="shedultTime">
         <State />
       </entry>
     </value>
